@@ -12,6 +12,18 @@ trigger:
 #       vmImage: "windows-latest"
 #     pool:
 #       vmImage: "macos-latest"
+#strategy:
+#  matrix:
+#    linux:
+#      imageName: "ubuntu-latest"
+#    mac:
+#      imageName: "macos-latest"
+#    windows:
+#      imageName: "windoes-latest"
+#  maxParallel: 3
+#pool:
+#  vmImage: $(imageName)
+
 pool:
   vmImage: ubuntu-latest
 

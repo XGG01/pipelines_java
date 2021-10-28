@@ -16,6 +16,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+#java code use Maven handle testing and release
+#你可以将其他 脚本 或 任务 作为步骤添加到管道。 任务是预打包的脚本。 您可以使用任务生成、测试、发布或
+#部署您的应用程序。 对于 Java，我们使用的 Maven 任务处理测试和发布结果，但你也可以使用任务来发布代码
+#覆盖率结果。
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'

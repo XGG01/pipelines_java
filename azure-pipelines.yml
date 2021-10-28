@@ -6,7 +6,12 @@
 trigger:
 - master
 
-#run in linux server
+#run in linux a server-proxy
+#examples:
+#     pool:
+#       vmImage: "windows-latest"
+#     pool:
+#       vmImage: "macos-latest"
 pool:
   vmImage: ubuntu-latest
 
